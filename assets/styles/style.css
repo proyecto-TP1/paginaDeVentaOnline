@@ -1,7 +1,12 @@
+
 main {
     height: 100%;
 }
 
 .container-sm {
     grid-template-columns: 50%,50%;
+}
+
+footer {
+    padding: 25px;
 }
