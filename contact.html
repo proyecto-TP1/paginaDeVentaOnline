@@ -16,6 +16,8 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -39,18 +41,17 @@
     
         <body>
             <header>
-               <h1>title</h1>
+               <h1>El Formoseño</h1>
                <ul
-                class="nav nav-tabs"
+                class="nav nav-tabs" 
+                style="background-color:#b1ccb4;"
                 id="navId"
                 role="tablist"
                >
                 <li class="nav-item">
                     <a
-                        href="#tab1Id"
+                        href="index.html"
                         class="nav-link active"
-                        data-bs-toggle="tab"
-                        aria-current="page"
                         >Home</a
                     >
                 </li>
@@ -62,8 +63,7 @@
                         role="button"
                         aria-haspopup="true"
                         aria-expanded="false"
-                        >secciones</a
-                    >
+                        >secciones</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#tab2Id">articulos para el hogar</a>
                         <a class="dropdown-item" href="#tab3Id">electronica</a>
@@ -71,7 +71,7 @@
                         <a class="dropdown-item" href="#tab5Id">computadoras</a>
                         <a class="dropdown-item" href="#tab6Id">celulares</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#tab7Id">contacto</a>
+                        <a class="dropdown-item" href="contact.html">contacto</a>
                         
                     </div>
                 </li>
@@ -81,9 +81,21 @@
                     >
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a href="#" class="nav-link disabled" data-bs-toggle="tab"
-                        >Ingresar</a
+                    <a href="#" class="nav-link" data-bs-toggle="tab"
+                        >Trabaja con nosotros</a
                     >
+                    <li class="nav-item" role="presentation">
+                        <a href="contact.html" class="nav-link" data-bs-toggle="tab">Contacto</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="about.html" class="nav-link" 
+                            >Sobre Nosotros</a>
+                    </li>
+                <li class="nav-item">
+                        <form action="search">
+                            <input type="search" name="buscador" id="buscador" placeholder="¿Qué producto busca?">
+                        </form>
+                    </li>
                 </li>
                </ul>
                
@@ -107,47 +119,34 @@
         </header>
         <Main>
             <div class="conteiner">
-              <a href="">correo:info@.com</a> <br>
-              <a href="">tel:54</a> <br>
-              <a href="">Dirección:. Formosa</a>
+              <a href="">correo:info@.elformoseñocom</a> <br>
+              <a href="">tel:5491111111111</a> <br>
+              <a href="">Dirección:Av. Acoyte 500. Formosa</a>
             </div>
           </Main>
         <h4>Formulario de contacto</h4>
         <div class="mb-3">
-            <label for="nombre">Nombre:</label><br>
+            <label for="nombre"> Tu nombre:</label><br>
             <input type="text" id="nombre" name="nombre" required><br><br>
-            <label for="exampleFormControlInput1" class="form-label">Correo</label>
+            <label for="exampleFormControlInput1" class="form-label">Tu correo</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
           </div>
-          <label for="exampleFormControlInput1" class="form-label">Teléfono:</label><br>
+          <label for="exampleFormControlInput1" class="form-label">Tu teléfono:</label><br>
           <input type="tel" id="telefono" name="telefono"><br><br>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <label for="exampleFormControlTextarea1" class="form-label">Tu mensaje</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
         <main></main>
-        <footer class="pie de pagina">
-            <!-- place footer here -->
-                <div class="container">
-                  <div class="row">
-                      <div class="col-md-4">
-                          <a href="mailto:tu_correo@example.com">
-                              <i class="bi bi-envelope"></i> Correo
-                          </a>
-                      </div>
-                      <div class="col-md-4">
-                          <a href="https://wa.me/tu_numero_de_telefono">
-                              <i class="bi bi-whatsapp"></i> WhatsApp
-                          </a>
-                      </div>
-                      <div class="col-md-4">
-                          <a href="https://maps.google.com/tu_direccion">
-                              <i class="bi bi-geo-alt"></i> Dirección
-                          </a>
-                      </div>
-                  </div>
-              </div> 
-        </footer>
+            <footer>
+                <div class="container-sm d-flex justify-content-around p-4">
+                    <a href="contact.html">contacto</a>
+                    <a href="about.html">Sobre nosotros</a>
+                    <a href="">trabaja con nosotros</a>
+                    <a href="">privacidad</a>
+                </div>
+            </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
